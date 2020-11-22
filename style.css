@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.icon {
+  display: flex;
+  font-size: 3rem;
+  color: #f5c9c2;
+  cursor: pointer;
+  flex-direction: row-reverse;
+}
+
+.heart {
+  padding: 10px;
+  display: flex;
+}
+
+/* HOVER - Adjacent sibling */
+.icon .heart:hover,
+.icon .heart:hover ~ .heart {
+  flex-direction: row-reverse;
+  color: #ff0000;
+}
